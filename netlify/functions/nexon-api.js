@@ -45,7 +45,7 @@ exports.handler = async function (event, context) {
   console.log("3. Nexon API URL 재구성...");
   const requestPath = event.path.replace("/api/", "");
   const queryString = event.rawQuery ? `?${event.rawQuery}` : "";
-  const nexonApiUrl = `${NEXON_API_URL_BASE}${requestPath}${queryString}`;
+  const nexonApiUrl = `${NEXON_API_URL_BASE}/${requestPath}${queryString}`;
   console.log(" - 최종 요청 URL:", nexonApiUrl);
 
   try {
