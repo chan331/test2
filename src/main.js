@@ -33,9 +33,9 @@ export async function routeTo(page) {
 }
 
 export async function initApp() {
-  await renderHeader(getHeaderElement());
+  // await renderHeader(getHeaderElement());
   await routeTo("home");
-  await renderFooter(getFooterElement());
+  // await renderFooter(getFooterElement());
   window.routeTo = routeTo;
 }
 
