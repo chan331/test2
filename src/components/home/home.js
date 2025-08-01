@@ -27,9 +27,16 @@ export async function renderHomePage(targetElement) {
     
     await loadGSAP();
     
-    const html = await fetch("src/components/home/home.html").then(function(res) { 
-        return res.text(); 
-    });
+    const html = ` <div class="home-container">
+        <section class="section-margin" id="main-visual-section">메인 페이지 빌드 테스트</section>
+        
+        <section class="section-margin" id="team-introduction-section"></section>
+        
+        <section class="section-margin" id="convention-section"></section>
+        
+        <section class="section-margin" id="main-button-section"></section>
+    </div>`
+    
     
     const bodyContent = extractBodyContent(html);
     targetElement.innerHTML = bodyContent;
