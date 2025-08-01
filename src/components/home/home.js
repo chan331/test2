@@ -32,7 +32,7 @@ export async function renderHomePage(targetElement) {
     const html = ` <div class="home-container">
         <section class="section-margin" id="main-visual-section">메인 페이지 빌드 테스트</section>
         
-        <section class="section-margin" id="team-introduction-section"></section>
+        <section class="section-margin" id="team-introduction-section">${result.ouid}</section>
         
         <section class="section-margin" id="convention-section"></section>
         
