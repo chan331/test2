@@ -1,15 +1,8 @@
-const API_KEY = import.meta.env.VITE_NEXON_OPEN_API_KEY1;
-const API_KEY_LIST = [
-  import.meta.env.VITE_NEXON_OPEN_API_KEY1,
-  import.meta.env.VITE_NEXON_OPEN_API_KEY2,
-  import.meta.env.VITE_NEXON_OPEN_API_KEY3,
-  import.meta.env.VITE_NEXON_OPEN_API_KEY4,
-];
 
 const detailArrayMap = {};
 
 const MATCH_MODE = "폭파미션";
-const DOMAIN = "https://open.api.nexon.com/suddenattack/v1";
+const DOMAIN = "";
 let OUID = null;
 const RESULT_KEY_VALUE = { 1: "승리", 2: "패배", 3: "무승부", DEFAULT: "-" };
 let MATCH_DETAIL_ID = "";
