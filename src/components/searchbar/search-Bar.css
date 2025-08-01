@@ -1,0 +1,137 @@
+.search-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+
+  /* 상세 검색 버튼 - 1행 1열 - 지울지 말지 고민 중 */
+  .search-form__filter-button {
+    grid-column: 1;
+    grid-row: 1;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    height: 2rem;
+    min-height: 30px;
+    padding: 0 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--main-color);
+    cursor: pointer;
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .search-form__filter-button:hover {
+    filter: brightness(1.1);
+  }
+
+  /* 검색 폼 - 1행 2열 */
+  .search-form {
+    grid-column: 2;
+    grid-row: 1;
+
+    .search-form__input-wrapper {
+      display: flex;
+      height: 2rem;
+      min-height: 30px;
+      flex: 1;
+      align-items: center;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      position: relative;
+      font-size: 0.7rem;
+
+      .search-form__input {
+        flex: 1;
+        height: 100%;
+        padding: 0 0.75rem;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+        font-size: 0.8rem;
+        color: var(--font-color);
+      }
+
+      .search-form__input::placeholder {
+        color: #aaaaaa;
+      }
+
+      .search-form__submit-button {
+        background: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 2.5rem;
+        border: none;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .search-icon {
+          display: block;
+          width: 1.75rem;
+          height: 1.75rem;
+          color: #888888;
+          transition: color 0.2s ease;
+          flex-shrink: 0;
+        }
+      }
+
+      .search-form__submit-button:hover .search-icon {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  /* 이전 검색 목록 - 2행 2열 (검색 폼 바로 아래) + 분리 예정 */
+  .previous-search-list {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+
+    .previous-search-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.2rem 0.4rem;
+      background: var(--lightgray-color);
+      border: 0.5px solid var(--line-color);
+      border-radius: 4px;
+      font-size: 0.7rem;
+      cursor: pointer;
+
+      .previous-search-item__text {
+        color: var(--font-color);
+        font-size: 0.7rem;
+      }
+
+      .previous-search-item__remove {
+        background: none;
+        border: none;
+        color: var(--font-color);
+        cursor: pointer;
+        padding: 0.2rem;
+        font-size: 0.6rem;
+      }
+      .previous-search-item__remove:hover {
+        color: var(--main-color);
+      }
+    }
+
+    .previous-search-item:hover {
+      border: 0.5px solid var(--main-color);
+    }
+  }
+}

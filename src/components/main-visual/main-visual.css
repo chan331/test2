@@ -1,0 +1,60 @@
+.main-visual {
+  position: relative;
+  overflow: hidden;
+  height: 43.4375rem;
+  display: flex;
+  align-items: center;
+
+  .main-visual__bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("/images/visual.png"); /* 원하는 메인 배경 이미지 */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .visual-img01 {
+    width: 18.5rem;
+    display: block;
+    margin-block-end: 1.25rem;
+  }
+
+  .visual-img02 {
+    width: 35rem;
+    display: block;
+    margin-block-end: 1.25rem;
+  }
+
+  .visual-text {
+    margin-top: 2.5rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* 🔥 모바일용 반응형 스타일 추가 */
+  @media (max-width: 768px) {
+    height: 600px; /* 모바일에서 높이 조절 */
+    align-items: flex-start;
+
+    .visual {
+      margin-top: 60px;
+    }
+
+    .main-visual__bg {
+      background-image: url("/images/visual-mobile.png"); /* 🔥 모바일용 배경 */
+    }
+
+    .visual-img01 {
+      width: 16rem; /* 모바일에서 크기 조절 */
+    }
+
+    .visual-img02 {
+      width: 26rem; /* 모바일에서 크기 조절 */
+    }
+
+    .visual-text {
+      font-size: 1rem; /* 모바일에서 텍스트 크기 조절 */
+      margin-top: 1.5rem;
+    }
+  }
+}

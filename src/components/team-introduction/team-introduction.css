@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+}
+
+.team-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .team-intro__header {
+    text-align: center;
+
+    .team-intro__team-name {
+      font-size: 1rem;
+      color: var(--main-color);
+    }
+
+    .team-intro__title {
+      font-size: 3.125rem;
+      margin: 1.875rem 0 1.5rem;
+    }
+
+    .team-intro__desc {
+      font-size: 1.25rem;
+    }
+  }
+
+  .team-intro__members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 3.125rem;
+    margin-top: 3.75rem;
+    padding: 0; /* 기본 패딩 제거 */
+    list-style: none;
+
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .team-member__img-wrap {
+        width: 20.125rem;
+        height: 20.125rem;
+        border-radius: 5000px;
+        background-size: cover;
+        background-position: center;
+        transition:
+          background-image 0.3s,
+          transform 0.3s;
+
+        &.member-img01 {
+          background-image: url("/images/member-01.png");
+
+          &:hover {
+            background-image: url("/images/member-01-over.png");
+            transform: scale(1.01) rotate(-0.5deg);
+          }
+        }
+        &.member-img02 {
+          background-image: url("/images/member-02.png");
+          &:hover {
+            background-image: url("/images/member-02-over.png");
+            transform: scale(1.01) rotate(-0.5deg);
+          }
+        }
+        &.member-img03 {
+          background-image: url("/images/member-03.png");
+          &:hover {
+            background-image: url("/images/member-03-over.png");
+            transform: scale(1.01) rotate(-0.5deg);
+          }
+        }
+        &.member-img04 {
+          background-image: url("/images/member-04.png");
+          &:hover {
+            background-image: url("/images/member-04-over.png");
+            transform: scale(1.01) rotate(-0.5deg);
+          }
+        }
+      }
+
+      .team-member__name {
+        font-size: 1.5rem;
+      }
+
+      .team-member__info {
+        font-size: 1rem;
+      }
+
+      .team-member__quote {
+        width: 20.125rem;
+        padding-block: 20px;
+        text-align: center;
+        font-size: 1rem;
+        color: var(--line-color);
+        border: 1px solid var(--line-color);
+        border-radius: 20px;
+        line-height: 1.5;
+      }
+    }
+
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

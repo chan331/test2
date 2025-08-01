@@ -1,0 +1,78 @@
+[
+  {
+    "tier": "UNRANK",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/012402621044afac26c6066600ddc646"
+  },
+  {
+    "tier": "BRONZE I",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/b0f5af75bf3550a99f889430dfca5c74"
+  },
+  {
+    "tier": "BRONZE II",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/f86f0c277939b3f76027f7925f856074"
+  },
+  {
+    "tier": "BRONZE III",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/d310c656c6c7000f22c118f7de7bedb4"
+  },
+  {
+    "tier": "SILVER I",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/c4915978785a7606078533ed969345d1"
+  },
+  {
+    "tier": "SILVER II",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/e79039fd53e85da3e798cbcb4fa66923"
+  },
+  {
+    "tier": "SILVER III",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/e78cb254264207e7cdca60574e9f0d0c"
+  },
+  {
+    "tier": "GOLD I",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/730c46caab05526911863c926795e248"
+  },
+  {
+    "tier": "GOLD II",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/89957d34fd79fc5930787d4c5f39143a"
+  },
+  {
+    "tier": "GOLD III",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/9b2ec6d8b04ac98d8f72a89faeda0a97"
+  },
+  {
+    "tier": "MASTER I",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/b653f4fd54581281740582c5d2161fe3"
+  },
+  {
+    "tier": "MASTER II",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/46e4958e9cb1090c15689b144095a0d5"
+  },
+  {
+    "tier": "MASTER III",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/72115a52cd367614bb383d4e59ab38ac"
+  },
+  {
+    "tier": "GRAND MASTER I",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/1c1421d5d7afa6515be53abf11d555f7"
+  },
+  {
+    "tier": "GRAND MASTER II",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/a0fa9b80343d2064a75f132eac84f596"
+  },
+  {
+    "tier": "GRAND MASTER III",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/8193b86db355b149d49e76d47d3f730d"
+  },
+  {
+    "tier": "LEGEND",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/2505b378734c223d6961dc336f3aee1f"
+  },
+  {
+    "tier": "RANKER",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/e58a5681cde2e41b72cecb6b96d745f2"
+  },
+  {
+    "tier": "HIGH RANKER",
+    "tier_image": "https://open.api.nexon.com/static/suddenattack/img/5da40d54b530b98ee4686f0a992074f2"
+  }
+]

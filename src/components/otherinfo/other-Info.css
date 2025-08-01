@@ -1,0 +1,141 @@
+.clan-profile {
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  border-radius: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #222,
+    #2a2a2a,
+    #3a3a3a,
+    #2a2a2a,
+    #222,
+    #1a1a1a
+  );
+
+  .clan-profile__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 4px;
+
+    .clan-profile__title {
+      font-size: 1rem;
+    }
+
+    .clan-profile__subtitle {
+      font-size: 11px;
+      color: var(--sub-font-color);
+      min-height: 1rem; /* 내용이 없어도 최소 높이를 보장합니다. */
+    }
+
+    .clan-profile__emblem {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+
+      .clan-profile__emblem__img {
+        width: 6rem;
+        min-width: 70px;
+        max-width: 100px;
+      }
+    }
+
+    .clan-profile__name {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+
+  
+
+  .clan-profile__body {
+    flex-grow: 1; /* 이 부분이 핵심입니다. 남는 공간을 모두 차지합니다. */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 0.625rem;
+    margin: 0.5rem;
+
+
+    .clan-profile__stats {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-inline: 0.5rem;
+      gap: 1rem;
+
+      @media (min-width:1440px) {
+        padding-bottom: 1.5rem;
+      }
+
+      .stat-item {
+        width: 100%;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .stat-item__label {
+          font-size: 0.7rem;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          img {
+            width: 1rem;
+            height: 1rem;
+          }
+        }
+
+        .stat-item__value {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.clan-profile::after {
+  content: '';
+  position: absolute;
+  inset: -0.3rem;
+  background: linear-gradient(
+    135deg,
+    #6e6e6e,
+    #8c8c8c,
+    #b3b3b3,
+    #7a7a7a,
+    #5c5c5c
+  );
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1440px) {
+}

@@ -1,0 +1,246 @@
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.news-box {
+  width: 49%;
+  height: 500px;
+  border-radius: 10px;
+  border: solid 2px var(--lightgray-color);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+.title-box {
+  width: 100%;
+  height: 40px;
+  background-color: var(--lightgray-color);
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.title-box__title-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--deepgray-color);
+}
+
+.news-title {
+  margin: 15px 0;
+  padding: 0;
+  margin-left: 10px;
+  color: var(--main-color);
+}
+
+.news-list {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ 
+.news-item {
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  height: 35px;
+  line-height: 35px;
+}
+
+.news-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news-link:hover, .news-link:focus, .news-item:hover .news-link {
+  background: var(--lightgray-color, #f0f0f0);
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.event-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-item {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.event-item:hover {
+  background-color: var(--lightgray-color)
+}
+
+.event-img {
+  width: 30%;
+  height: 90%;
+
+  @media (max-width: 480px) {
+    width: 40%;
+  }
+}
+
+.event-info {
+  flex: 1;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    padding: 5px 10px;
+  }
+}
+
+.event-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-desc {
+  width: 99%;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-period {
+  font-size: 0.8rem;
+  color: var(--line-color);
+  margin-bottom: 10px;
+}
+
+.ranking-container {
+  background: var(--deepgray-color);
+  border-radius: 10px;
+  border: solid 2px var(--lightgray-color);
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.ranking-tabs {
+  display: flex;
+}
+
+.ranking-tab {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  background: var(--lightgray-color);
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.ranking-tab.active {
+  background: var(--main-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ranking-table-wrapper {
+  overflow-x: auto;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.85rem;
+  }
+}
+
+.ranking-table th, .ranking-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--lightgray-color);
+}
+
+.ranking-table th {
+  background: var(--line-color);
+}
+
+.ranking-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ranking-rank {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.ranking-grade-img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 400px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.ranking-nickname {
+  font-weight: bold;
+  color: var(--main-color);
+}

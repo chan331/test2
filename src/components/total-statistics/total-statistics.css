@@ -1,0 +1,227 @@
+.statistics {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--lightgray-color);
+
+  .statistics-title {
+    background-color: var(--lightgray-color);
+    padding: 0.625rem;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .statistics-body {
+    background-color: var(--deepgray-color);
+    padding: 0.625rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+
+    .statistics-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      .item-title__text {
+        font-size: 0.75rem;
+        color: #aaaaaa;
+      }
+
+      &:last-child {
+        .item-table {
+          grid-template-columns: 12.5rem 1fr 1.25rem 1fr;
+        }
+      }
+
+      .item-table {
+        display: grid;
+        grid-template-columns: 12.5rem repeat(3, 1fr);
+        border: 0.0625rem solid var(--line-color);
+        border-radius: 0.25rem;
+        text-align: center;
+
+        .item-table__list {
+          border-left: 0.0625rem solid var(--line-color);
+
+          &:first-child {
+            color: #aaaaaa;
+            border-left: none;
+
+            .record-list-item {
+              font-size: 0.75rem;
+
+              &:first-child {
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+                color: var(--font-color);
+
+                &:hover {
+                  background-color: var(--lightgray-color);
+                }
+              }
+            }
+          }
+          .match-type-list-item {
+            position: relative;
+
+            .match-type-list {
+              display: none;
+              background-color: #ffffff;
+              color: #454545;
+              font-size: 0.875rem;
+              font-weight: 600;
+              position: absolute;
+              top: 2.5rem;
+              width: 100%;
+              border-bottom-left-radius: 0.375rem; /* 왼쪽 아래만 둥글게 */
+              border-bottom-right-radius: 0.375rem; /* 오른쪽 아래만 둥글게 */
+
+              .match-item {
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+                padding: 0.4063rem; /* 패딩 줄임 (기존보다 작게) */
+                font-size: 0.75rem; /* 폰트 크기 줄임 */
+                line-height: 1.4; /* 라인 높이 줄임 */
+
+                &:hover {
+                  background-color: #eee;
+                }
+              }
+            }
+          }
+        }
+
+        .record-list-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.25rem;
+          padding: 0 0.625rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          font-size: 0.9375rem;
+
+          &:first-child {
+            border-bottom: 0.0625rem solid var(--line-color);
+            color: #aaaaaa;
+            font-size: 0.75rem;
+          }
+
+          &.input-list-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            color: var(--font-color);
+
+            &:hover {
+              background-color: var(--lightgray-color);
+            }
+
+            .input-item {
+              border: none;
+              font-size: 0.75rem;
+              color: var(--font-color);
+              background-color: transparent;
+              cursor: pointer;
+              outline: none;
+
+              /* 달력 숨기 (표준 브라우저) */
+              &::-webkit-calendar-picker-indicator {
+                display: none;
+              }
+            }
+          }
+
+          .icon-select-date,
+          .icon-arrow,
+          .icon-menu {
+            width: 0.75rem;
+            height: 0.75rem;
+          }
+
+          .icon-stat {
+            width: 0.9375rem;
+            height: 0.9375rem;
+          }
+
+          .icon-menu {
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+
+  /* 반응형 */
+  .mobile {
+    display: none;
+  }
+
+  @media (max-width: 1440px) {
+    .web {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .web {
+      display: none;
+    }
+
+    .mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .statistics-item {
+        .item-table {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+
+          .item-table__list:nth-child(1),
+          .item-table__list:nth-child(2),
+          .item-table__list:nth-child(5),
+          .item-table__list:nth-child(8) {
+            grid-column: 1 / -1;
+            border: 1px solid var(--lightgray-color);
+          }
+
+          .item-table__list {
+            .record-list-item {
+              border: 0;
+            }
+          }
+
+          .item-table__list.category {
+            font-size: 0.75rem;
+            color: #aaaaaa;
+          }
+
+          .item-table__list.value {
+            .record-list-item {
+              font-size: 0.9375rem;
+              color: var(--font-color);
+            }
+          }
+        }
+      }
+
+      .statistics-item:last-child {
+        .item-table {
+          grid-template-columns: repeat(2, 1fr);
+
+          .item-table__list:nth-child(1),
+          .item-table__list:nth-child(2),
+          .item-table__list:nth-child(5),
+          .item-table__list:nth-child(8) {
+            grid-column: 1 / -1;
+            border: 1px solid var(--lightgray-color);
+          }
+        }
+      }
+    }
+  }
+}

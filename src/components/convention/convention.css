@@ -1,0 +1,72 @@
+.convention-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.convention-container__team-name {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.convention-container__title {
+    font-size: 3.125rem;
+    margin: 1.875rem 0 1.5rem;
+}
+
+.convention-container__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    border: solid 1px var(--line-color);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container__box__tab-container {
+    display: flex;
+    border-bottom: 1px solid var(--lightgray-color);
+    background-color: var(--deepgray-color);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    color: var(--line-color);
+    font-size: 1.1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.tab-btn.active {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+}
+
+.container__box__contents-container {
+    flex: 1;
+    padding: 2rem 2.5rem;
+    background-color: var(--lightgray-color);
+    border-radius: 0 0 5px 5px;
+    height: 100%;
+    min-height: 350px;
+    position: relative;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}

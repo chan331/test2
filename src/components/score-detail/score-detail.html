@@ -1,0 +1,139 @@
+<section class="card-component-wrapper">
+      <section class="card-header-section">
+        <ul class="match-type-list" id="matchType">
+          <li class="match-type-item" data-value=""><button class="btn-match-type active">전체</button></li>
+          <li class="match-type-item" data-value="퀵매치 클랜전"><button class="btn-match-type">클랜전</button></li>
+          <li class="match-type-item" data-value="랭크전 솔로"><button class="btn-match-type">솔로 랭크</button></li>
+          <li class="match-type-item" data-value="랭크전 파티"><button class="btn-match-type">파티 랭크</button></li>
+          <li class="match-type-item" data-value="토너먼트"><button class="btn-match-type">토너먼트</button></li>
+        </ul>
+      </section>
+      <section class="card-body-section">
+        <ul class="match-history-list">
+          <li class="match-history-item">
+            <section class="match-preview-section">
+              <div class="match-result-box"></div>
+              <section class="match-padding-section">
+                <div class="match-type-box">
+                  <!-- match-result, match-type-text, match-date-text -->
+                </div>
+                <div class="match-map-box">
+                  <!-- match-map-text -->
+                </div>
+                <section class="match-stats-section grid-full-width-section">
+                  <div class="match-stats-box">
+                    <p class="match-stats-label-text">
+                      <img class="icon-stat" src="./src/assets/user_icon/user_score.svg" alt="" />
+                      킬뎃
+                    </p>
+                    <!-- kdRatio -->
+                  </div>
+                  <div class="match-stats-box">
+                    <p class="match-stats-label-text">
+                      <img class="icon-stat" src="./src/assets/user_icon/user_score.svg" alt="" />
+                      KDA
+                    </p>
+                    <!-- kill, death, assist -->
+                  </div>
+                  <div class="match-stats-box">
+                    <p class="match-stats-label-text">
+                      <img class="icon-stat" src="./src/assets/user_icon/user_crits_shot.svg" alt="" />
+                      헤드샷
+                    </p>
+                    <!-- headshotCount -->
+                  </div>
+                  <div class="match-stats-box">
+                    <p class="match-stats-label-text">
+                      <img class="icon-stat" src="./src/assets/user_icon/user_dealing.svg" alt="" />
+                      딜량
+                    </p>
+                    <!-- damageDealt -->
+                  </div>             
+                </section>
+                <button class="btn-match-detail grid-full-width-section" type="button">
+                  <!-- 매치 상세 버튼 -->
+                </button>
+              </section>
+            </section>
+            <section class="user-match-detail-wrapper">
+              <section class="match-header-section">
+                <p class="match-result-text"></p>
+                <p class="match-type-text"></p>
+                <p class="match-date-text"></p>
+                <button class="btn-mode-change">최근 동향 조회</button>
+              </section>
+              <section class="match-detail-section">
+                <section class="match-team-section win">
+                  <section class="match-team-header-section win">
+                    <p class="match-header-text win">승리</p>
+                  </section>
+                  <section class="match-team-body-section">
+                    <ul class="match-team-label-list">
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">플레이어</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">킬뎃</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">KDA</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">헤드샷</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">딜량</p>
+                      </li>
+                    </ul>
+                    <ul class="match-team-list">
+                      <li><a class="btn-search-player" target="_blank">
+                        <img class="img-grade" alt="계급" />
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                      </a></li>
+                    </ul>
+                  </section>
+                </section>
+                <section class="match-team-section lose">
+                  <section class="match-team-header-section lose">
+                    <p class="match-header-text lose">패배</p>
+                  </section>
+                  <section class="match-team-body-section">
+                    <ul class="match-team-label-list">
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">플레이어</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">킬뎃</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">KDA</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">헤드샷</p>
+                      </li>
+                      <li class="match-team-label-item">
+                        <p class="match-team-label-text">딜량</p>
+                      </li>
+                    </ul>
+                    <ul class="match-team-list">
+                      <li><a class="btn-search-player" target="_blank">
+                        <img class="img-grade" alt="계급" />
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                        <p class="match-team-text"></p>
+                      </a></li>
+                    </ul>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </li>
+        </ul>
+      </section>
+    </section>
