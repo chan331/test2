@@ -3,6 +3,7 @@ import { renderTeamIntroduction } from "../team-introduction/team-introduction.j
 import { renderConvention } from "../convention/convention.js";
 import { renderMainButton } from "../main-button/main-button.js";
 import { getUserId } from "../../api/apis.js";
+import { UserInfo } from "../userinfo/user-Info.js";
 
 function extractBodyContent(html) {
     const tempDiv = document.createElement("div");
@@ -44,10 +45,10 @@ export async function renderHomePage(targetElement) {
     targetElement.innerHTML = bodyContent;
     
     // try {
-    //     const mainVisualSection = document.getElementById("main-visual-section");
-    //     if (mainVisualSection) {
-    //         await renderMainVisual(mainVisualSection);
-    //     }
+        const mainVisualSection = document.getElementById("main-visual-section");
+        if (mainVisualSection) {
+            UserInfo(mainVisualSection, { data: null });
+        }
         
     //     const teamIntroSection = document.getElementById("team-introduction-section");
     //     if (teamIntroSection) {
