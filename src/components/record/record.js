@@ -33,20 +33,20 @@ export async function renderRecordPage(targetElement) {
             UserInfo(userInfoSection, { data: null }); 
         }
 
-        const scoreInfoSection = document.getElementById("score-info-section");
-        if (scoreInfoSection) {
-            await renderScoreInfo(scoreInfoSection);
-        }
+        // const scoreInfoSection = document.getElementById("score-info-section");
+        // if (scoreInfoSection) {
+        //     await renderScoreInfo(scoreInfoSection);
+        // }
 
-        const totalStatisticsSection = document.getElementById("total-statistics-section");
-        if (totalStatisticsSection) {
-            await renderTotalStatistics(totalStatisticsSection);
-        }
+        // const totalStatisticsSection = document.getElementById("total-statistics-section");
+        // if (totalStatisticsSection) {
+        //     await renderTotalStatistics(totalStatisticsSection);
+        // }
         
-        const scoreDetailSection = document.getElementById("score-detail-section");
-        if (scoreDetailSection) {
-            await renderScoreDetail(scoreDetailSection);
-        }
+        // const scoreDetailSection = document.getElementById("score-detail-section");
+        // if (scoreDetailSection) {
+        //     await renderScoreDetail(scoreDetailSection);
+        // }
         
         console.log("전적 페이지 렌더링 완료");
         
