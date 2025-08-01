@@ -2,6 +2,7 @@ import { renderMainVisual } from "../main-visual/main-visual.js";
 import { renderTeamIntroduction } from "../team-introduction/team-introduction.js";
 import { renderConvention } from "../convention/convention.js";
 import { renderMainButton } from "../main-button/main-button.js";
+import { getUserId } from "../../api/apis.js";
 
 function extractBodyContent(html) {
     const tempDiv = document.createElement("div");
@@ -24,7 +25,8 @@ function extractBodyContent(html) {
 
 export async function renderHomePage(targetElement) {
     if (!targetElement) return;
-    
+    const result = await getUserId("왕자");
+    console.log(result);
     // await loadGSAP();
     
     const html = ` <div class="home-container">
